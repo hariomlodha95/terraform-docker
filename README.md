@@ -4,11 +4,11 @@
   Set up and deploy an Nginx container using Terraform with Docker provider.
   This project automates container creation, network setup, and resource provisioning.
 
-🧰 Tools & Technologies
-  Terraform
-  Docker
-  Nginx
-  Local Docker Engine
+🧰 Tools & Technologies:
+   Terraform
+   Docker
+   Nginx
+   Local Docker Engine
 
 📂 Project Structure
 ```
@@ -80,5 +80,5 @@ This ensures the Nginx container is healthy and responding.
  2. Label assigned: terraform-docker = hariom
  → Helps identify containers created by this Terraform config.
 
-👤 Author
+👤 Author : 
  Hari Om — Terraform & DevOps practice project.
