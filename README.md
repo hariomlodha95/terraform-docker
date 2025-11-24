@@ -53,11 +53,11 @@ terraform plan
 terraform apply -auto-approve  
 ```
 Result:
- 1. Docker network web-net created
- 2. Nginx image pulled
- 3. Container advanced-nginx running
- 4. Port 8001 mapped to container’s port 80
- 5. Host folder /home/hlodha/html mounted into container
+   1. Docker network web-net created
+   2. Nginx image pulled
+   3. Container advanced-nginx running
+   4. Port 8001 mapped to container’s port 80
+   5. Host folder /home/hlodha/html mounted into container
 
 4. To clean up / destroy created resources:
 ```
