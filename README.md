@@ -26,11 +26,11 @@ terraform-docker/
 2. Creates a custom Docker network (named web-net).
 3. Pulls the latest Nginx image.
 4. Creates and runs an Nginx container (advanced-nginx) with:
-  - Port mapping (host port 8001 → container port 80)
-  - Environment variables
-  - Labels (terraform-docker = hariom)
-  - Volume mount (/home/hlodha/html on host → /usr/share/nginx/html in container)
-  - Health check (to ensure the container is operational)
+    - Port mapping (host port 8001 → container port 80)
+    - Environment variables
+    - Labels (terraform-docker = hariom)
+    - Volume mount (/home/hlodha/html on host → /usr/share/nginx/html in container)
+    - Health check (to ensure the container is operational)
 5. The container can be accessed via: http://localhost:8001
 ---
 ✅ Prerequisites
