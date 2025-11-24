@@ -3,13 +3,13 @@
 📌 Objective
   Set up and deploy an Nginx container using Terraform with Docker provider.
   This project automates container creation, network setup, and resource provisioning.
-
+---
 🧰 Tools & Technologies:
-   Terraform
-   Docker
-   Nginx
-   Local Docker Engine
-
+  - Terraform
+  - Docker
+  - Nginx
+  - Local Docker Engine
+---
 📂 Project Structure
 ```
 terraform-docker/
@@ -19,25 +19,26 @@ terraform-docker/
 └── .terraform/
 
 ```
+---
 ⚙️ What the Terraform config does
 
 1. Initializes the Docker provider.
 2. Creates a custom Docker network (named web-net).
 3. Pulls the latest Nginx image.
 4. Creates and runs an Nginx container (advanced-nginx) with:
-  a. Port mapping (host port 8001 → container port 80)
-  b. Environment variables
-  c. Labels (terraform-docker = hariom)
-  d. Volume mount (/home/hlodha/html on host → /usr/share/nginx/html in container)
-  e. Health check (to ensure the container is operational)
+  - Port mapping (host port 8001 → container port 80)
+  - Environment variables
+  - Labels (terraform-docker = hariom)
+  - Volume mount (/home/hlodha/html on host → /usr/share/nginx/html in container)
+  - Health check (to ensure the container is operational)
 5. The container can be accessed via: http://localhost:8001
-
+---
 ✅ Prerequisites
-Ensure the following are installed:
-  a. Terraform (v1.x or later)
-  b. Docker Engine (running locally)
+  Ensure the following are installed:
+   - Terraform (v1.x or later)
+   - Docker Engine (running locally)
      Optional: Git (if committing to GitHub)
-
+---
 🧪 How to Use
 1. Initialise Terraform:
 ```
@@ -62,6 +63,7 @@ Result:
 ```
 terraform destroy -auto-approve
 ```
+---
 🩺 Health Check
  The configuration includes:
 ```
@@ -73,12 +75,12 @@ healthcheck {
 }
 ```
 This ensures the Nginx container is healthy and responding.
-
+---
 📂 Volume Mapping & Labels
  1. Host directory: /home/hlodha/html → Container directory: /usr/share/nginx/html
  → Any static files you place in the host folder will appear inside the container.
  2. Label assigned: terraform-docker = hariom
  → Helps identify containers created by this Terraform config.
-
+---
 👤 Author : 
- Hari Om — Terraform & DevOps practice project.
+ - Hari Om — Terraform & DevOps practice project.
