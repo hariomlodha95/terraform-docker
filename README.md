@@ -1,8 +1,8 @@
-🚀 Terraform + Docker Deployment (Nginx Web Server)
+## 🚀 Terraform + Docker Deployment (Nginx Web Server)
 
 📌 Objective
-       Set up and deploy an Nginx container using Terraform with Docker provider.
-       This project automates container creation, network setup, and resource provisioning.
+  -  Set up and deploy an Nginx container using Terraform with Docker provider.
+  -  This project automates container creation, network setup, and resource provisioning.
 ---
 🧰 Tools & Technologies:
   - Terraform
